@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-label="KIA">
+  <g fill="#fff">
+    <path d="M32 28h42v40H32z"/>
+    <path d="M80 28h42L76 68H34z"/>
+    <path d="M160 28h42v40h-42z"/>
+    <path d="M205 68l58-40h44l-58 40z"/>
+    <path d="M310 28h38l40 40h-44l-13-14-15 14h-44z"/>
+  </g>
+</svg>
