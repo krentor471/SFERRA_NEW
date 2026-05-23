@@ -96,6 +96,7 @@ a {
   font-size: 18px;
   line-height: 1;
   justify-content: flex-start;
+  margin: 0 auto;
 }
 
 .nav a + a::before {
@@ -335,9 +336,6 @@ a {
   transform: scale(1);
 }
 
-.image-cards img:nth-child(3) {
-}
-
 .image-cards p {
   min-height: 116px;
   margin: 0;
@@ -504,11 +502,9 @@ a {
   text-align: center;
 }
 
-/* Круглая маска */
-/* Контейнер картинки */
 .benefit-img {
   position: relative;
-  width: 294px; /* Твой размер */
+  width: 294px;
   height: 294px;
   border-radius: 50%;
   overflow: hidden;
@@ -522,46 +518,9 @@ a {
   height: 100%;
   object-fit: cover;
   display: block;
-  mask-image: linear-gradient(to bottom, #000 -10%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 -20%, transparent 100%);
 }
 
-/* 1. ТОЛСТАЯ ДУГА (Верх и Лево) */
-.benefit-img::before {
-  content: "";
-  position: absolute;
-  inset: -3px;
-  border-radius: 50%;
-  border: 15px solid var(--teal);
-  border-bottom-color: var(--teal);
-  border-left: var(--teal);
-  transform: rotate(273deg);
-  pointer-events: none;
-  z-index: 2;
-}
-
-/* 2. ТОНКИЙ ХВОСТИК (Низ и Право) */
-.benefit-img::after {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  border: 8px solid var(--teal);
-  border-radius: 50%;
-  -webkit-mask-image: linear-gradient(
-    135deg,
-    transparent 30%,
-    #000 50%,
-    transparent 90%
-  );
-  mask-image: linear-gradient(
-    47deg,
-    transparent 30%,
-    #000 50%,
-    transparent 90%
-  );
-  z-index: 2;
-  pointer-events: none;
-}
-/* Текст под кругом */
 .benefit-grid p {
   margin: 0;
   color: var(--black, #1a1a1a);
@@ -574,7 +533,8 @@ a {
 }
 
 #benefit-p-1 {
-  left: -12px;
+  left: -20px;
+  top: -6em;
 }
 
 #benefit-p-2 {
@@ -582,19 +542,23 @@ a {
 }
 
 #benefit-p-3 {
-  left: -56px;
+  left: -66px;
+  top: -6em;
 }
 
 #benefit-p-4 {
-  left: -12px;
+  left: -10px;
+  top: -139px;
 }
 
 #benefit-p-5 {
-  left: -12px;
+  left: -23px;
+  top: -5.5em;
 }
 
 #benefit-p-6 {
-  left: -20px;
+  left: -25px;
+  top: -5.8em;
 }
 
 /* Стили для обёртки картинки */
@@ -625,6 +589,41 @@ a {
   height: calc(100% + 20px);
   pointer-events: none;
   z-index: 2;
+}
+
+.useful_vector {
+  position: absolute;
+}
+.useful_vector-1 {
+  position: absolute;
+  top: 1em;
+  left: 38px;
+}
+.useful_vector-2 {
+  position: absolute;
+  position: absolute;
+  top: 1em;
+  left: 462px;
+}
+.useful_vector-3 {
+  position: absolute;
+  top: 1em;
+  left: 878px;
+}
+.useful_vector-4 {
+  position: absolute;
+  top: 456px;
+  left: 42px;
+}
+.useful_vector-5 {
+  position: absolute;
+  top: 464px;
+  left: 455px;
+}
+.useful_vector-6 {
+  position: absolute;
+  top: 449px;
+  left: 880px;
 }
 
 .catalog {
@@ -892,6 +891,8 @@ a {
     padding-left: 24px;
   }
 }
+
+
 
 @media (max-width: 620px) {
   .shell {
