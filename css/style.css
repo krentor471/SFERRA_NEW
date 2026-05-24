@@ -80,11 +80,12 @@ a {
   position: fixed;
   z-index: 10;
   top: 0;
-  right: 0;
-  left: 290px;
+  left: 0;           /* Убрать right: 0 и left: 290px */
+  right: 0;          /* Или оставить для центрирования */
   background: rgba(0, 30, 48, 0.35);
   backdrop-filter: blur(4px);
   max-width: 1340px;
+  margin: 0 auto;    /* Добавить для центрирования самого header */
 }
 
 .nav {
@@ -95,8 +96,9 @@ a {
   padding-left: 58px;
   font-size: 18px;
   line-height: 1;
-  justify-content: flex-start;
+  justify-content: center;  /* Изменить с flex-start на center */
   margin: 0 auto;
+  transform: translate(-200px, 0);
 }
 
 .nav a + a::before {
