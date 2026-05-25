@@ -654,6 +654,15 @@ a {
   margin: 0 0 57px;
 }
 
+.catalog-note {
+  margin: -28px 40px 0;
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
 .catalog-group h3 {
   height: 41px;
   margin: 0 0 18px;
@@ -1350,6 +1359,7 @@ a {
   .stats strong,
   .stats article:nth-child(3) strong span {
     font-size: 126px;
+    clip-path: inset(0 0 0 0);
   }
 
   .stats h3 {
@@ -1513,6 +1523,12 @@ a {
   .catalog-group > p {
     margin: 0 0 22px;
     font-size: 15px;
+  }
+
+  .catalog-note {
+    margin: -20px 0 0;
+    font-size: 15px;
+    line-height: 1.25;
   }
 
   .modules article::before {
@@ -1766,6 +1782,11 @@ a {
 
   .modules article {
     min-height: 104px;
+  }
+
+  .catalog-note {
+    margin-top: -14px;
+    font-size: 13px;
   }
 
   .project-mosaic {
